@@ -15,7 +15,9 @@ class Magic
     public $n = true;
 
     //overloading will happen only when vars will called out of class
-    public $x, $y, $z;
+    public $x;
+    public $y;
+    public $z;
 
 
     //default constructor
@@ -52,15 +54,15 @@ class Magic
     public function __get($name)
     {
         echo "Trying to get value from '$name'\n";
-        if (array_key_exists($name, $this->data))
-        {
+        if (array_key_exists($name, $this->data)) {
             echo "Data successfully founded and written\n";
             return $this->data[$name];
         }
 
         trigger_error(
             "Can't get undefined value '$name' with __get(): ",
-            E_USER_NOTICE);
+            E_USER_NOTICE
+        );
         return null;
     }
 
@@ -83,7 +85,5 @@ class Magic
         echo "Calling method '$name' "
             . implode(', ', $value). "\n";
     }
-
-//    function  __clone(){}
 }
 ?>

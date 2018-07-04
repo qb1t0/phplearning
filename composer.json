@@ -2,20 +2,22 @@
     "name": "0.0.1/try-make-package",
     "description": "just a test",
     "require": {
-        "php": ">=5.6",
-        "monolog/monolog": "1.23.*"
+        "php": ">=7.0",
+        "monolog/monolog": "1.23.*",
+        "squizlabs/php_codesniffer": "3.*",
+        "phpdocumentor/phpdocumentor": "2.*"
     },
     "authors": [
         {
-            "name": "hanlei",
-            "email": "nicehanlei@163.com"
+            "name": "yaroslav.salata",
+            "email": "yaroslav.salata@sannacode.com"
         }
     ],
     "minimum-stability": "stable",
 
     "autoload": {
         "psr-4": {
-            "MiniUpload\\": "src/"
+            "TestUpload\\": "src/"
         }
     } 
 }
