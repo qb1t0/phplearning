@@ -17,7 +17,8 @@
 
     "autoload": {
         "psr-4": {
-            "TestUpload\\": "src/"
+            "TestUpload\\": "src/",
+            "TestUploadInterface\\" : "src/Interface/"
         }
     } 
 }

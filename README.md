@@ -8,5 +8,3 @@
    - phpdocumentator 2.*
     
 _____________
-   
-   
