@@ -44,13 +44,12 @@ class Magic
     }
 
     //setting overloaded data here
-    public function __set($name, $value)
-    {
+    public function __set($name, $value){
         echo "Ok, setting '$value' in '$name'\n";
         $this->data[$name] = $value;
     }
 
-    //setting overloaded data here
+    //setting foverloaded data here
     public function __get($name)
     {
         echo "Trying to get value from '$name'\n";
