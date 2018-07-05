@@ -18,7 +18,8 @@
     "autoload": {
         "psr-4": {
             "TestUpload\\": "src/",
-            "TestUploadInterface\\" : "src/Interface/"
+            "TestUploadInterface\\" : "src/Interface/",
+            "TestUploadTrait\\" : "src/Trait"
         }
     } 
 }
